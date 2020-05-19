@@ -170,7 +170,7 @@ end
 
 class Operation
   Error = Types.Instance(RangeError)
-  include Dry::Monads::Result(Error)
+  include Dry::Monads.Result(Error)
 
   def call(value)
     case value
